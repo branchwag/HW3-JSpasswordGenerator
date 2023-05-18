@@ -9,11 +9,11 @@ From this, the password generating function was crafted and integrated into the 
 ## Installation
 
 No install required! This is simply a webpage that be accessed by going here:
-
+https://branchwag.github.io/HW3-JSpasswordGenerator/
 
 ## Usage
 
-Visit the page via: 
+Visit the page via: https://branchwag.github.io/HW3-JSpasswordGenerator/
 
 Screenshot:
 
