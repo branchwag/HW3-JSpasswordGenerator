@@ -15,7 +15,7 @@ function generatePassword() {
 
     //Check inputs
   // the password needs to be a valid length 
-  if (passwordLength < 8 || passwordLength > 128) {
+  while (passwordLength < 8 || passwordLength > 128) {
     passwordLength = prompt("Password length invalid. Please enter number between 8 and 128.");
   }
 
