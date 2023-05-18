@@ -15,9 +15,13 @@ function generatePassword() {
 
     //Check inputs
   // the password needs to be a valid length 
-  while (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("Password length invalid. Please enter number between 8 and 128.");
-  }
+  // while (passwordLength < 8 || passwordLength > 128) {
+  //   passwordLength = prompt("Password length invalid. Please enter number between 8 and 128.");
+  // }
+  if (passwordLength < 8 || passwordLength >128){
+    passwordLength = alert("Password must be at least 8 characters and no more than 128 characters.")
+    return generatePassword();
+}
 
   // make function to make the actual password and call it only if tests check out
   var generatedPass = [];
