@@ -13,11 +13,11 @@ No install required! This is simply a webpage that be accessed by going here:
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Visit the page via: 
 
-To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+Screenshot:
 
-![alt text](assets/images/screenshot.png)
+![alt text](screenshot.png)
 
 ## Credits
 
