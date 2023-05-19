@@ -3,10 +3,6 @@
 function generatePassword() {
 
   var passwordLength = prompt("Please input a password length (at least 8 characters but no more than 128 characters).");
-  var includeLowercase = confirm("Include lowercase letters?");
-  var includeUppercase = confirm("Include uppercase letters?");
-  var includeNumeric = confirm("Include numbers?");
-  var includeSpecial = confirm("Include special characters?");
 
   // var generatedPass = "JustTesting";
 
@@ -18,10 +14,15 @@ function generatePassword() {
   // while (passwordLength < 8 || passwordLength > 128) {
   //   passwordLength = prompt("Password length invalid. Please enter number between 8 and 128.");
   // }
-  if (passwordLength < 8 || passwordLength >128){
-    passwordLength = alert("Password must be at least 8 characters and no more than 128 characters.")
+  while (passwordLength < 8 || passwordLength > 128){
+    alert("Password must be at least 8 characters and no more than 128 characters.");
     return generatePassword();
 }
+
+  var includeLowercase = confirm("Include lowercase letters?");
+  var includeUppercase = confirm("Include uppercase letters?");
+  var includeNumeric = confirm("Include numbers?");
+  var includeSpecial = confirm("Include special characters?");
 
   // make function to make the actual password and call it only if tests check out
   var generatedPass = [];
