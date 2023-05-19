@@ -14,7 +14,7 @@ function generatePassword() {
   // while (passwordLength < 8 || passwordLength > 128) {
   //   passwordLength = prompt("Password length invalid. Please enter number between 8 and 128.");
   // }
-  while (passwordLength < 8 || passwordLength > 128){
+  while (!((passwordLength > 8) && (passwordLength < 128))){
     alert("Password must be at least 8 characters and no more than 128 characters.");
     return generatePassword();
 }
